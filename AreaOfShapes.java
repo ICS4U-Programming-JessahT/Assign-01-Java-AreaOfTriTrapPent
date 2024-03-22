@@ -17,7 +17,8 @@ public final class AreaOfShapes {
    * Print message.
    *
    * @return To return values back to main program.
-   * @param args Command-line arguments (not used in program).
+   * @param triHeight
+   * @param tri
    */
 
 
@@ -32,7 +33,7 @@ public final class AreaOfShapes {
 
       System.out.print("The area of a triangle with a height of ");
       System.out.println(triHeight + " and base of " + triBase
-      + " is " + area +"cm^2");
+       + " is " + area +"cm^2");
 
       return area;
     } else {
