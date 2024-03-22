@@ -32,7 +32,7 @@ public final class AreaOfShapes {
 
       System.out.print("The area of a triangle with a height of ");
       System.out.println(triHeight + " and base of " + triBase + " is "
-          + area +"cm^2");
+          + area + "cm^2");
 
       return area;
     } else {
