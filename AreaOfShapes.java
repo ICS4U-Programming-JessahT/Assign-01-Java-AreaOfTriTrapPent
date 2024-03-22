@@ -26,7 +26,8 @@ public final class AreaOfShapes {
       final double area = 0.5f * (triHeight * triBase);
 
       System.out.print("The area of a triangle with a height of ");
-      System.out.println(triHeight + " and base of " + triBase + " is " + area + "cm^2");
+      System.out.println(triHeight + " and base of " + triBase +
+      " is " + area +"cm^2");
 
       return area;
     } else {
@@ -42,7 +43,8 @@ public final class AreaOfShapes {
       final double area = 0.5f * (trapBaseA + trapBaseB) * trapHeight;
 
       System.out.print("The area of a trapezoid with a height of ");
-      System.out.print(trapHeight + " and sides of " + trapBaseA + " and " + trapBaseB);
+      System.out.print(trapHeight + " and sides of " + trapBaseA +
+      " and " + trapBaseB);
       System.out.println(" is " + area + "cm^2");
       return area;
     } else {
@@ -58,7 +60,8 @@ public final class AreaOfShapes {
       final double area = 5 * (0.5 * (pentBase * pentHeight));
 
       System.out.print("The area of a pentagon with a height of ");
-      System.out.println(pentHeight + " and the base of " + pentBase + " is " + area + "cm^2");
+      System.out.println(pentHeight + " and the base of " + pentBase +
+      " is " + area + "cm^2");
 
       return area;
     } else {
@@ -101,7 +104,8 @@ public final class AreaOfShapes {
         } catch (NumberFormatException error) {
           System.out.println("Invalid input");
         }
-      } else if (userShape.equals("Triangle") || userShape.equals("triangle")) {
+      } else if (userShape.equals("Triangle") ||
+      userShape.equals("triangle")) {
         // If user enters triangle.
         try {
           System.out.print("Enter the height: ");
