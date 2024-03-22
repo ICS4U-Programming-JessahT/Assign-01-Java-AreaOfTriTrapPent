@@ -18,46 +18,46 @@ public final class AreaOfShapes {
    *
    * @param args Command-line arguments (not used in program).
    */
-  public static double TriAreaNum(double triHeight, double triBase) {
+  public static double triAreaNum(double triHeight, double triBase) {
 
     if (triHeight > 0 && triBase > 0) {
 
-      final double Area = 0.5f * (triHeight * triBase);
+      final double area = 0.5f * (triHeight * triBase);
 
       System.out.print("The area of a triangle with a height of ");
-      System.out.println(triHeight + " and base of " + triBase + " is " + Area + "cm^2");
+      System.out.println(triHeight + " and base of " + triBase + " is " + area + "cm^2");
 
-      return Area;
+      return area;
     } else {
       System.out.println("Values must be positive");
       return 0;
     }
   }
 
-  public static double TrapAreaNum(double trapHeight, double trapBaseA, double trapBaseB) {
+  public static double trapAreaNum(double trapHeight, double trapBaseA, double trapBaseB) {
 
     if (trapHeight > 0 && trapBaseA > 0 && trapBaseB > 0) {
-      final double Area = 0.5f * (trapBaseA + trapBaseB) * trapHeight;
+      final double area = 0.5f * (trapBaseA + trapBaseB) * trapHeight;
 
       System.out.print("The area of a trapezoid with a height of ");
       System.out.print(trapHeight + " and sides of " + trapBaseA + " and " + trapBaseB);
-      System.out.println(" is " + Area + "cm^2");
-      return Area;
+      System.out.println(" is " + area + "cm^2");
+      return area;
     } else {
       System.out.println("Values must be positive.");
       return 0;
     }
   }
 
-  public static double PentAreaNum(double pentHeight, double pentBase) {
+  public static double pentAreaNum(double pentHeight, double pentBase) {
 
     if (pentHeight > 0 && pentBase > 0) {
-      final double Area = 5 * (0.5 * (pentBase * pentHeight));
+      final double area = 5 * (0.5 * (pentBase * pentHeight));
 
       System.out.print("The area of a pentagon with a height of ");
-      System.out.println(pentHeight + " and the base of " + pentBase + " is " + Area + "cm^2");
+      System.out.println(pentHeight + " and the base of " + pentBase + " is " + area + "cm^2");
 
-      return Area;
+      return area;
     } else {
       System.out.println("Values must be positive.");
       return 0;
@@ -88,65 +88,56 @@ public final class AreaOfShapes {
       if (userShape.equals("Pentagon") || userShape.equals("pentagon")) {
         try {
           System.out.print("Enter the height: ");
-          final double PentHeight = Double.parseDouble(scanner.nextLine());
+          final double pentHeight = Double.parseDouble(scanner.nextLine());
 
           System.out.print("Enter the base: ");
-          final double PentBase = Double.parseDouble(scanner.nextLine());
+          final double pentBase = Double.parseDouble(scanner.nextLine());
 
-          double UserArea = PentAreaNum(PentHeight, PentBase);
+          double userArea = pentAreaNum(pentHeight, pentBase);
 
         } catch (NumberFormatException error) {
           System.out.println("Invalid input");
         }
-      }
-
-      // If user enters triangle.
-      else if (userShape.equals("Triangle") || userShape.equals("triangle")) {
-
+      } else if (userShape.equals("Triangle") || userShape.equals("triangle")) {
+        // If user enters triangle.
         try {
           System.out.print("Enter the height: ");
-          final double TriHeight = Double.parseDouble(scanner.nextLine());
+          final double triHeight = Double.parseDouble(scanner.nextLine());
 
           System.out.print("Enter the base: ");
-          final double TriBase = Double.parseDouble(scanner.nextLine());
+          final double triBase = Double.parseDouble(scanner.nextLine());
 
-          double UserArea = TriAreaNum(TriHeight, TriBase);
+          double userArea = triAreaNum(triHeight, triBase);
 
         } catch (NumberFormatException error) {
           System.out.println("Invalid input");
         }
 
-      }
-
-      // If user enters trapezoid.
-      else if (userShape.equals("Trapezoid") || userShape.equals("trapezoid")) {
-
+      } else if (userShape.equals("Trapezoid") || userShape.equals("trapezoid")) {
+        // If user enters trapezoid.
         try {
 
           System.out.print("Enter the height: ");
-          final double TrapHeight = Double.parseDouble(scanner.nextLine());
+          final double trapHeight = Double.parseDouble(scanner.nextLine());
 
           System.out.print("Enter the base A: ");
-          final double TrapBaseA = Double.parseDouble(scanner.nextLine());
+          final double trapBaseA = Double.parseDouble(scanner.nextLine());
 
           System.out.print("Enter the base B: ");
-          final double TrapBaseB = Double.parseDouble(scanner.nextLine());
+          final double trapBaseB = Double.parseDouble(scanner.nextLine());
 
           // call function
-          double UserArea = TrapAreaNum(TrapHeight, TrapBaseA, TrapBaseB);
+          double userArea = trapAreaNum(trapHeight, trapBaseA, trapBaseB);
         } catch (NumberFormatException error) {
           System.out.println("Invalid input");
         }
 
-      }
-
+      } else if (userShape.equals("q")) {
       // If user wants to quit.
-      else if (userShape.equals("q")) {
         scanner.close();
         System.out.println("Thanks for playing");
-      }
+      } else {
       // If user enters an invalid input.
-      else {
         System.out.println("Enter a valid shape");
       }
     }
