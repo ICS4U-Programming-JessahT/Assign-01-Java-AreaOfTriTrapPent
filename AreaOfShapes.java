@@ -18,7 +18,8 @@ public final class AreaOfShapes {
    *
    * @param args Command-line arguments (not used in program).
    */
-  public static double triAreaNum(double triHeight, double triBase) {
+  public static double triAreaNum(final double triHeight,
+  final double triBase) {
 
     if (triHeight > 0 && triBase > 0) {
 
@@ -34,7 +35,8 @@ public final class AreaOfShapes {
     }
   }
 
-  public static double trapAreaNum(double trapHeight, double trapBaseA, double trapBaseB) {
+  public static double trapAreaNum(final double trapHeight,
+  final double trapBaseA, final double trapBaseB) {
 
     if (trapHeight > 0 && trapBaseA > 0 && trapBaseB > 0) {
       final double area = 0.5f * (trapBaseA + trapBaseB) * trapHeight;
@@ -49,7 +51,8 @@ public final class AreaOfShapes {
     }
   }
 
-  public static double pentAreaNum(double pentHeight, double pentBase) {
+  public static double pentAreaNum(final double pentHeight,
+  final double pentBase) {
 
     if (pentHeight > 0 && pentBase > 0) {
       final double area = 5 * (0.5 * (pentBase * pentHeight));
