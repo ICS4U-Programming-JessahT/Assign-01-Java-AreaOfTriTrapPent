@@ -42,8 +42,7 @@ public final class AreaOfShapes {
   }
 
 /**
- * Calculates the area of a trapezoid.
- * 
+ * Calculates the area of a trapezoid. 
  * @param trapHeight The height of the trapezoid
  * @param trapBaseA The baseA of the trapezoid.
  * @param trapBaseB The baseB of the trapezoid.
@@ -71,7 +70,6 @@ public final class AreaOfShapes {
 
 /**
  * Calculates the area of a triangle.
- * 
  * @param pentHeight The height of the pentagon.
  * @param pentBase The base of the pentagon.
  * @return Returns value.
