@@ -16,6 +16,7 @@ public final class AreaOfShapes {
   /**
    * Print message.
    *
+   * @return To return values back to main program.
    * @param args Command-line arguments (not used in program).
    */
 
