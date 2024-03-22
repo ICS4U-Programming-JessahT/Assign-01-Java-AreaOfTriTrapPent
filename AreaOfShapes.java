@@ -16,7 +16,6 @@ public final class AreaOfShapes {
 
 /**
  * Calculates the area of a triangle.
- * 
  * @param triHeight The height of the triangle.
  * @param triBase The base of the triangle.
  * @return Returns value.
@@ -46,7 +45,8 @@ public final class AreaOfShapes {
  * Calculates the area of a trapezoid.
  * 
  * @param trapHeight The height of the trapezoid
- * @param trapBase The base of the trapezoid.
+ * @param trapBaseA The baseA of the trapezoid.
+ * @param trapBaseB The baseB of the trapezoid.
  * @return returns value.
  */
 
