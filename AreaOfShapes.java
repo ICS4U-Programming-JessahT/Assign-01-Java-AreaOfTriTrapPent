@@ -13,14 +13,14 @@ public final class AreaOfShapes {
     // whitespace
   }
 
-  /**
-   * Print message.
-   *
-   * @return To return values back to main program.
-   * @param triHeight
-   * @param tri
-   */
 
+/**
+ * Calculates the area of a triangle.
+ * 
+ * @param triHeight The height of the triangle.
+ * @param triBase The base of the triangle.
+ * @return Returns value.
+ */
 
   // Triangle area function
   public static double triAreaNum(final double triHeight,
@@ -42,9 +42,17 @@ public final class AreaOfShapes {
     }
   }
 
+/**
+ * Calculates the area of a trapezoid.
+ * 
+ * @param trapHeight The height of the trapezoid
+ * @param trapBase The base of the trapezoid.
+ * @return returns value.
+ */
+
   // Trapezoid area function
   public static double trapAreaNum(final double trapHeight,
-  final double trapBaseA, final double trapBaseB) {
+      final double trapBaseA, final double trapBaseB) {
 
     // checks if user imputed positive values.
     if (trapHeight > 0 && trapBaseA > 0 && trapBaseB > 0) {
@@ -52,7 +60,7 @@ public final class AreaOfShapes {
 
       System.out.print("The area of a trapezoid with a height of ");
       System.out.print(trapHeight + " and sides of " + trapBaseA
-      + " and " + trapBaseB);
+          + " and " + trapBaseB);
       System.out.println(" is " + area + "cm^2");
       return area;
     } else {
@@ -60,6 +68,14 @@ public final class AreaOfShapes {
       return 0;
     }
   }
+
+/**
+ * Calculates the area of a triangle.
+ * 
+ * @param pentHeight The height of the pentagon.
+ * @param pentBase The base of the pentagon.
+ * @return Returns value.
+ */
 
   // Pentagon area function.
   public static double pentAreaNum(final double pentHeight,
@@ -79,6 +95,12 @@ public final class AreaOfShapes {
       return 0;
     }
   }
+
+  /**
+   * Print message.
+   *
+   * @param args Command-line arguments (not used in program).
+   */
 
   // Main program.
   public static void main(final String[] args) {
